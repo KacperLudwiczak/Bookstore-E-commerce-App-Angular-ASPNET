@@ -16,10 +16,12 @@ public class ProductRepository(StoreContext context) : IProductRepository
         context.Products.Remove(product);
     }
 
-    // public async Task<IReadOnlyList<Product>> GetGenreAsync()
-    // {
-    //     return await context.Products.ToListAsync();
-    // }
+    public async Task<IReadOnlyList<string>> GetGenreAsync()
+    {
+        return await context.Products.Select(x => x.Genre)
+            .Distinct()
+            .ToListAsync();
+    }
 
     public async Task<Product?> GetProductByIdAsync(int id)
     {
@@ -31,10 +33,12 @@ public class ProductRepository(StoreContext context) : IProductRepository
         return await context.Products.ToListAsync();
     }
 
-    // public async Task<IReadOnlyList<string>> GetPublisherAsync()
-    // {
-    //     return await context.Products.ToListAsync();
-    // }
+    public async Task<IReadOnlyList<string>> GetPublisherAsync()
+    {
+        return await context.Products.Select(x => x.Publisher)
+            .Distinct()
+            .ToListAsync();
+    }
 
     public bool ProductExists(int id)
     {
