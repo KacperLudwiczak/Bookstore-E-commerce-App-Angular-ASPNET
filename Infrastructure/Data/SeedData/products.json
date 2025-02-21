@@ -1,0 +1,146 @@
+[
+  {
+    "Name": "Harry Potter and the Sorcerer's Stone",
+    "Description": "A young wizard, Harry Potter, embarks on a magical journey at Hogwarts School of Witchcraft and Wizardry.",
+    "Price": 19.99,
+    "PictureUrl": "https://example.com/harrypotter1.jpg",
+    "Genre": "Fantasy",
+    "Publisher": "Bloomsbury",
+    "QuantityInStock": 100
+  },
+  {
+    "Name": "Harry Potter and the Chamber of Secrets",
+    "Description": "Harry returns to Hogwarts for his second year and faces new dangers, including the legend of the Chamber of Secrets.",
+    "Price": 21.99,
+    "PictureUrl": "https://example.com/harrypotter2.jpg",
+    "Genre": "Fantasy",
+    "Publisher": "Bloomsbury",
+    "QuantityInStock": 80
+  },
+  {
+    "Name": "The Witcher: The Last Wish",
+    "Description": "A collection of short stories following Geralt of Rivia, a monster hunter known as a Witcher.",
+    "Price": 15.99,
+    "PictureUrl": "https://example.com/witcher1.jpg",
+    "Genre": "Fantasy",
+    "Publisher": "Orbit",
+    "QuantityInStock": 120
+  },
+  {
+    "Name": "The Witcher: Blood of Elves",
+    "Description": "Geralt takes in young Ciri and trains her to become a Witcher while dark forces seek her mysterious power.",
+    "Price": 17.99,
+    "PictureUrl": "https://example.com/witcher2.jpg",
+    "Genre": "Fantasy",
+    "Publisher": "Orbit",
+    "QuantityInStock": 90
+  },
+  {
+    "Name": "The Hobbit",
+    "Description": "A classic tale of adventure as Bilbo Baggins embarks on a journey to reclaim a kingdom from a dragon.",
+    "Price": 22.99,
+    "PictureUrl": "https://example.com/hobbit.jpg",
+    "Genre": "Fantasy",
+    "Publisher": "HarperCollins",
+    "QuantityInStock": 110
+  },
+  {
+    "Name": "The Lord of the Rings: The Fellowship of the Ring",
+    "Description": "Frodo Baggins sets out on a journey to destroy the One Ring and save Middle-earth.",
+    "Price": 24.99,
+    "PictureUrl": "https://example.com/lotr1.jpg",
+    "Genre": "Fantasy",
+    "Publisher": "HarperCollins",
+    "QuantityInStock": 95
+  },
+  {
+    "Name": "A Game of Thrones",
+    "Description": "The first book in the epic fantasy series A Song of Ice and Fire by George R.R. Martin.",
+    "Price": 18.99,
+    "PictureUrl": "https://example.com/got.jpg",
+    "Genre": "Fantasy",
+    "Publisher": "Bantam",
+    "QuantityInStock": 85
+  },
+  {
+    "Name": "Percy Jackson & The Olympians: The Lightning Thief",
+    "Description": "Percy Jackson discovers he is a demigod and embarks on a quest to prevent a war among the gods.",
+    "Price": 14.99,
+    "PictureUrl": "https://example.com/percy1.jpg",
+    "Genre": "Fantasy",
+    "Publisher": "Disney Hyperion",
+    "QuantityInStock": 130
+  },
+  {
+    "Name": "Eragon",
+    "Description": "A young farm boy discovers a dragon egg and is thrust into a battle against an evil empire.",
+    "Price": 16.99,
+    "PictureUrl": "https://example.com/eragon.jpg",
+    "Genre": "Fantasy",
+    "Publisher": "Knopf",
+    "QuantityInStock": 90
+  },
+  {
+    "Name": "The Name of the Wind",
+    "Description": "The story of Kvothe, a gifted young man who grows to be a legendary figure in magic and music.",
+    "Price": 19.99,
+    "PictureUrl": "https://example.com/nameofthewind.jpg",
+    "Genre": "Fantasy",
+    "Publisher": "DAW Books",
+    "QuantityInStock": 75
+  },
+  {
+    "Name": "Mistborn: The Final Empire",
+    "Description": "A world ruled by a dark lord, where magic is wielded through metals, and a rebellion rises.",
+    "Price": 17.49,
+    "PictureUrl": "https://example.com/mistborn.jpg",
+    "Genre": "Fantasy",
+    "Publisher": "Tor Books",
+    "QuantityInStock": 100
+  },
+  {
+    "Name": "Dune",
+    "Description": "A young nobleman, Paul Atreides, must navigate political intrigue and mysticism on the desert planet Arrakis.",
+    "Price": 23.99,
+    "PictureUrl": "https://example.com/dune.jpg",
+    "Genre": "Science Fiction",
+    "Publisher": "Ace Books",
+    "QuantityInStock": 88
+  },
+  {
+    "Name": "The Catcher in the Rye",
+    "Description": "A novel about teenage angst and alienation, following Holden Caulfield in New York City.",
+    "Price": 12.99,
+    "PictureUrl": "https://example.com/catcher.jpg",
+    "Genre": "Fiction",
+    "Publisher": "Little, Brown and Company",
+    "QuantityInStock": 120
+  },
+  {
+    "Name": "1984",
+    "Description": "A dystopian novel about a totalitarian regime that controls every aspect of life and thought.",
+    "Price": 13.99,
+    "PictureUrl": "https://example.com/1984.jpg",
+    "Genre": "Dystopian",
+    "Publisher": "Secker & Warburg",
+    "QuantityInStock": 140
+  },
+  {
+    "Name": "Brave New World",
+    "Description": "A futuristic world where people are controlled through pleasure and conditioning.",
+    "Price": 14.99,
+    "PictureUrl": "https://example.com/bravenewworld.jpg",
+    "Genre": "Dystopian",
+    "Publisher": "Chatto & Windus",
+    "QuantityInStock": 110
+  },
+  {
+    "Name": "To Kill a Mockingbird",
+    "Description": "A novel about racial injustice and moral growth in the American South.",
+    "Price": 18.99,
+    "PictureUrl": "https://example.com/mockingbird.jpg",
+    "Genre": "Fiction",
+    "Publisher": "J.B. Lippincott & Co.",
+    "QuantityInStock": 100
+  }
+]
