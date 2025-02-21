@@ -70,6 +70,18 @@ public class ProductsController(IProductRepository repo) : ControllerBase
         return BadRequest("Problem deleting the product");
     }
 
+    [HttpGet("genre")]
+    public async Task<ActionResult<IReadOnlyList<string>>> GetBrands()
+    {
+        return Ok(await repo.GetGenreAsync());
+    }
+
+    [HttpGet("publisher")]
+    public async Task<ActionResult<IReadOnlyList<string>>> GetTypes()
+    {
+        return Ok(await repo.GetPublisherAsync());
+    }
+
     private bool ProductExists(int id)
     {
         return repo.ProductExists(id);
