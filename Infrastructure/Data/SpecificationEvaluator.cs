@@ -9,7 +9,7 @@ public class SpecificationEvaluator<T> where T : BaseEntity
     {
         if (spec.Criteria != null)
         {
-            query = query.Where(spec.Criteria); // x => x.Brand == brand
+            query = query.Where(spec.Criteria); // x => x.Genre == genre
         }
 
         if (spec.OrderBy != null)
@@ -35,7 +35,7 @@ public class SpecificationEvaluator<T> where T : BaseEntity
     {
         if (spec.Criteria != null)
         {
-            query = query.Where(spec.Criteria); // x => x.Brand == brand
+            query = query.Where(spec.Criteria); // x => x.Genre == genre
         }
 
         if (spec.OrderBy != null)
