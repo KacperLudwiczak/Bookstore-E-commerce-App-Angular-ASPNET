@@ -13,24 +13,24 @@ public class ProductSpecParams
     }
     
 
-    private List<string> _brands = [];
-    public List<string> Brands
+    private List<string> _genre = [];
+    public List<string> Genre
     {
-        get => _brands;
+        get => _genre;
         set
         {
-            _brands = value.SelectMany(x => x.Split(',',
+            _genre = value.SelectMany(x => x.Split(',',
                 StringSplitOptions.RemoveEmptyEntries)).ToList();
         }
     }
 
-    private List<string> _types = [];
-    public List<string> Types
+    private List<string> _publisher = [];
+    public List<string> Publisher
     {
-        get => _types;
+        get => _publisher;
         set
         {
-            _types = value.SelectMany(x => x.Split(',',
+            _publisher = value.SelectMany(x => x.Split(',',
                 StringSplitOptions.RemoveEmptyEntries)).ToList();
         }
     }
