@@ -1,6 +1,9 @@
 {
     "cSpell.words": [
         "ASPNETCORE",
-        "nvarchar"
+        "badrequest",
+        "internalerror",
+        "nvarchar",
+        "validationerror"
     ]
 }
