@@ -8,7 +8,6 @@ import {MatIcon} from '@angular/material/icon';
   standalone: true,
   imports: [
     MatIcon,
-    MatButton,
     MatBadge
   ],
   templateUrl: './header.component.html',
