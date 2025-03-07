@@ -1,0 +1,44 @@
+@use '@angular/material' as mat;
+
+$customTheme: mat.define-theme();
+
+@include mat.core();
+
+.custom-theme {
+    @include mat.all-component-themes($customTheme);
+
+    // override the button styles
+    .mdc-button, .mdc-raised-button, .mdc-stroked-button, .mdc-flat-button {
+        @apply .button;
+    }
+}
+
+// Core font styles
+html, body {
+    font-family: 'Inter', sans-serif; /* Use your preferred font */
+    font-size: 1rem; /* Base font size */
+    line-height: 1.5;
+    color: #333; /* Default text color */
+}
+
+// Core button class for reuse
+.button {
+    border: 0.125rem solid #ec6720;
+    color: #ec6720; /* Orange-brown text */
+    padding: 0.5rem 1rem;
+    background: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+    margin: 0.1rem;
+    
+    &:hover {
+        background-color: #ec6720;
+        color: #fff; /* White text on hover */
+    }
+}
+
+.container {
+    @apply mx-auto max-w-screen-2xl
+}

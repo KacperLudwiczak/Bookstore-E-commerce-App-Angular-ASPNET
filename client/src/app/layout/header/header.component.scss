@@ -1,16 +1,14 @@
 header {
     width: 100%;
     padding: 0.75rem; /* p-3 */
-    border-bottom: 1px solid #ddd; /* border-b */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
 }
 
 .header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1536px; /* max-w-screen-2xl */
-    margin: 0 auto; /* mx-auto */
+    max-width: 96rem; 
+    margin: 0.5rem;
 }
 
 .header-container img {
@@ -37,25 +35,24 @@ nav {
 }
 
 .custom-badge .mat-badge-content {
-    width: 24px;
-    height: 24px;
-    font-size: 14px;
-    line-height: 24px;
+    width: 1.3rem; 
+    height: 1.3rem;
+    font-size: 0.875rem; 
+    line-height: 1.5rem;
+    background: #ec6720
 }
 
 .custom-badge .mat-icon {
-    font-size: 32px;
-    width: 32px;
-    height: 32px;
+    font-size: 1.875rem;
+    width: 1.875rem;
+    height: 1.875rem;
+    color: #000;
 }
 
-button {
-    border: 1px solid #ccc;
-    padding: 0.5rem 1rem;
-    background: none;
-    cursor: pointer;
+.login-button {
+    margin-left: 1.5rem; 
 }
 
-button:hover {
-    background-color: #f3f3f3;
+.register-button {
+    margin-right: 2rem; 
 }
