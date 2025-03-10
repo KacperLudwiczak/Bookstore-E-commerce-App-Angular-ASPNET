@@ -12,6 +12,7 @@
 
 .paginator {
     background-color: white; /* bg-white */
+    color: #ec6720
 }
 
 .search-form {
@@ -31,6 +32,13 @@
     color: #1f2937; /* text-gray-900 */
     border: 1px solid #d1d5db; /* border-gray-300 */
     border-radius: 0.5rem; /* rounded-lg */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #ec6720; /* Orange border */
+    box-shadow: 0 0 0 3px rgba(236, 103, 32, 0.5); /* Orange glow effect */
 }
 
 .search-button {
