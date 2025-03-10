@@ -1,0 +1,25 @@
+<div class="filters-container">
+    <h3 class="filters-title">Filters</h3>
+    <div class="filters-content">
+        <div class="filter-section">
+            <h4 class="filter-heading">Genre</h4>
+            <mat-selection-list [(ngModel)]="selectedGenre" [multiple]="true">
+                @for (genre of shopService.genre; track $index) {
+                    <mat-list-option [value]="genre">{{genre}}</mat-list-option>
+                }
+            </mat-selection-list>
+        </div>
+
+        <div class="filter-section">
+            <h4 class="filter-heading">Publisher</h4>
+            <mat-selection-list [(ngModel)]="selectedPublisher" [multiple]="true">
+                @for (publisher of shopService.publisher; track $index) {
+                    <mat-list-option [value]="publisher">{{publisher}}</mat-list-option>
+                }
+            </mat-selection-list>
+        </div>
+    </div>
+    <div class="filters-actions">
+        <button class="second-button" (click)="applyFilters()">Apply Filters</button>
+    </div>
+</div>
