@@ -10,10 +10,8 @@ import { Component, inject } from '@angular/core';
    selector: 'app-filters-dialog',
    standalone: true,
    imports: [
-     MatDivider,
      MatSelectionList,
      MatListOption,
-     MatButton,
      FormsModule
    ],
    templateUrl: './filters-dialog.component.html',

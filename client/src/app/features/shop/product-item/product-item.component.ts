@@ -14,7 +14,6 @@ import { Component, Input } from '@angular/core';
      MatCardActions,
      MatIcon,
      CurrencyPipe,
-     MatButton
    ],
    templateUrl: './product-item.component.html',
    styleUrl: './product-item.component.scss'

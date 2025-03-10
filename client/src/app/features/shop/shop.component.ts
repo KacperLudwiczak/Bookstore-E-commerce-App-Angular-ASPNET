@@ -18,9 +18,7 @@ import { Component, inject } from '@angular/core';
    selector: 'app-shop',
    standalone: true,
    imports: [
-     MatCard,
      ProductItemComponent,
-     MatButton,
      MatIcon,
      MatMenu,
      MatSelectionList,
