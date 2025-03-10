@@ -1,0 +1,72 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem; /* gap-3 */
+}
+
+.container-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.paginator {
+    background-color: white; /* bg-white */
+}
+
+.search-form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 28rem; /* max-w-md */
+    margin: 0 1rem; /* mx-4 */
+}
+
+.search-input {
+    display: block;
+    width: 100%;
+    padding: 1rem; /* p-4 */
+    font-size: 0.875rem; /* text-sm */
+    color: #1f2937; /* text-gray-900 */
+    border: 1px solid #d1d5db; /* border-gray-300 */
+    border-radius: 0.5rem; /* rounded-lg */
+}
+
+.search-button {
+    position: absolute;
+    top: 0.5rem; /* top-2 */
+    right: 2rem; /* right-8 */
+    display: flex;
+    align-items: center;
+    padding-left: 0.75rem; /* pl-3 */
+}
+
+.button-group {
+    display: flex;
+    gap: 0.75rem; /* gap-3 */
+}
+
+.match-input-height {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border: 2px solid #ec6720; /* Example stroke color */
+    background: none;
+    color: #ec6720;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.match-input-height:hover {
+    background-color: #ec6720;
+    color: white;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* grid-cols-5 */
+    gap: 1rem; /* gap-4 */
+}
