@@ -23,18 +23,44 @@ html, body {
 
 // Core button class for reuse
 .button {
-    border: 0.125rem solid #ec6720;
-    color: #ec6720; /* Orange-brown text */
+    width: 100%; /* w-full */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
     padding: 0.5rem 1rem;
+    border: 2px solid #ec6720; /* Orange-brown border */
+    color: #ec6720;
     background: none;
-    cursor: pointer;
     font-weight: bold;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
     transition: all 0.3s ease;
-    margin: 0.1rem;
     
     &:hover {
         background-color: #ec6720;
         color: #fff; /* White text on hover */
+    }
+}
+
+.second-button {
+    width: 100%; /* w-full */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background: #ec6720;
+    border: 2px solid #ec6720;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+    &:hover {
+        background-color: #fff;
+        border: 2px solid #ec6720; /* Orange-brown border */
+        color: #ec6720;
     }
 }
