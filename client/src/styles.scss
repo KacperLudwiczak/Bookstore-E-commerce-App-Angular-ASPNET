@@ -13,6 +13,14 @@ $customTheme: mat.define-theme();
     }
 }
 
+// Force Material color override via CSS variables (optional)
+:root {
+    --mdc-theme-primary: #ec6720 !important; /* Orange */
+    --mdc-theme-secondary: #ff9800 !important; /* Another shade of orange */
+    --mdc-theme-on-primary: white !important;
+}
+  
+
 // :root {
 //     // Customize the checkbox border and icon when checked
 //     @include mat.checkbox-overrides((
