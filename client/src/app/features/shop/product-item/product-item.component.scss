@@ -6,7 +6,7 @@
     height: 35rem;
     border-radius: 0.5rem;
     justify-content: space-between;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     background-color: white;
     padding: 1rem;
     transition: transform 0.2s ease-in-out;
@@ -14,7 +14,7 @@
 
 .product-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
     cursor: pointer;
 }
 
