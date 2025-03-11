@@ -13,53 +13,53 @@ $customTheme: mat.define-theme();
     }
 }
 
-:root {
-    // Customize the checkbox border and icon when checked
-    @include mat.checkbox-overrides((
-      selected-checkmark-color: #ec6720,        // Orange color for the checkmark (icon) when selected
-      selected-icon-color: #ec6720,              // Orange color for the checkbox icon when checked
-      unselected-icon-color: #888,               // Grey color for the checkbox icon when unchecked
-      selected-focus-icon-color: #ec6720,        // Orange color for the icon when focused
-      selected-hover-icon-color: #ec6720,        // Orange color for the icon when hovered
-      disabled-selected-icon-color: #ec6720,     // Orange color for the icon when disabled and selected
-      disabled-unselected-icon-color: #888,      // Grey color for the icon when disabled and unselected
-    ));
+// :root {
+//     // Customize the checkbox border and icon when checked
+//     @include mat.checkbox-overrides((
+//       selected-checkmark-color: #ec6720,        // Orange color for the checkmark (icon) when selected
+//       selected-icon-color: #ec6720,              // Orange color for the checkbox icon when checked
+//       unselected-icon-color: #888,               // Grey color for the checkbox icon when unchecked
+//       selected-focus-icon-color: #ec6720,        // Orange color for the icon when focused
+//       selected-hover-icon-color: #ec6720,        // Orange color for the icon when hovered
+//       disabled-selected-icon-color: #ec6720,     // Orange color for the icon when disabled and selected
+//       disabled-unselected-icon-color: #888,      // Grey color for the icon when disabled and unselected
+//     ));
   
-    // To ensure the checkbox border is orange when checked
-    .mat-checkbox.mat-accent.mat-checkbox-checked .mat-checkbox-frame {
-      border-color: #ec6720 !important; /* Orange border when checked */
-    }
+//     // To ensure the checkbox border is orange when checked
+//     .mat-checkbox.mat-accent.mat-checkbox-checked .mat-checkbox-frame {
+//       border-color: #ec6720 !important; /* Orange border when checked */
+//     }
     
-    .mat-checkbox.mat-accent.mat-checkbox-checked .mat-checkbox-background {
-      background-color: transparent !important; /* Make the background transparent */
-    }
+//     .mat-checkbox.mat-accent.mat-checkbox-checked .mat-checkbox-background {
+//       background-color: transparent !important; /* Make the background transparent */
+//     }
     
-    .mat-checkbox .mat-checkbox-frame {
-      border: 2px solid #888 !important; /* Default border color (light grey for unchecked) */
-    }
+//     .mat-checkbox .mat-checkbox-frame {
+//       border: 2px solid #888 !important; /* Default border color (light grey for unchecked) */
+//     }
   
-    .mat-checkbox .mat-checkbox-background {
-      background-color: transparent !important; /* Make sure the background is transparent */
-    }
+//     .mat-checkbox .mat-checkbox-background {
+//       background-color: transparent !important; /* Make sure the background is transparent */
+//     }
   
-    /* When the checkbox is focused, change the border and icon color */
-    .mat-checkbox:focus .mat-checkbox-frame {
-      border-color: #ec6720 !important; /* Orange border on focus */
-    }
+//     /* When the checkbox is focused, change the border and icon color */
+//     .mat-checkbox:focus .mat-checkbox-frame {
+//       border-color: #ec6720 !important; /* Orange border on focus */
+//     }
   
-    .mat-checkbox:focus .mat-checkbox-background {
-      background-color: transparent !important; /* Keep background transparent on focus */
-    }
+//     .mat-checkbox:focus .mat-checkbox-background {
+//       background-color: transparent !important; /* Keep background transparent on focus */
+//     }
   
-    /* When the checkbox is hovered, change the border and icon color */
-    .mat-checkbox:hover .mat-checkbox-frame {
-      border-color: #ec6720 !important; /* Orange border on hover */
-    }
+//     /* When the checkbox is hovered, change the border and icon color */
+//     .mat-checkbox:hover .mat-checkbox-frame {
+//       border-color: #ec6720 !important; /* Orange border on hover */
+//     }
   
-    .mat-checkbox:hover .mat-checkbox-background {
-      background-color: transparent !important; /* Keep background transparent on hover */
-    }
-  }
+//     .mat-checkbox:hover .mat-checkbox-background {
+//       background-color: transparent !important; /* Keep background transparent on hover */
+//     }
+//   }
   
 
 // Core font styles
@@ -118,9 +118,9 @@ html, body {
     }
 }
 
-button.match-input-height {
-    height: var(--mat-form-field-container-height) !important;
-}
+// button.match-input-height {
+//     height: var(--mat-form-field-container-height) !important;
+// }
 
 .mdc-notched-outline__notch {
   border-right-style: none !important
