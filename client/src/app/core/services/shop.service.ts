@@ -37,6 +37,10 @@ import { HttpClient, HttpParams } from '@angular/common/http';
  
      return this.http.get<Pagination<Product>>(this.baseUrl + 'products', {params});
    }
+
+   getProduct(id: number) {
+    return this.http.get<Product>(this.baseUrl + 'products/' + id);
+  }
  
    getGenre() {
      if (this.genre.length > 0) return;
