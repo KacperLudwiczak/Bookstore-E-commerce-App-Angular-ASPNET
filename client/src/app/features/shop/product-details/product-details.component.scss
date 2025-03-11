@@ -1,0 +1,84 @@
+/* Ensure the section has proper spacing */
+.product-section {
+    padding: 2rem 0; /* Adjust vertical padding */
+}
+
+/* Container width and layout */
+.product-container {
+    max-width: 1280px; /* Adjust for large screens */
+    margin: 0 auto;
+    padding: 0 1rem; /* Adds padding on small screens */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two-column layout */
+    gap: 2rem; /* Space between image & details */
+    align-items: center;
+}
+
+/* Product image styling */
+.product-image {
+    max-width: 100%;
+    border-radius: 8px; /* Slightly rounded edges */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+/* Product title */
+.product-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+}
+
+/* Price section */
+.product-price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ec6720; /* Highlight price in orange */
+    margin-top: 1rem;
+}
+
+/* Button styles */
+.product-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    align-items: center;
+}
+
+.product-actions button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #ec6720;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.product-actions button:hover {
+    background: #d35d1c; /* Darker orange */
+}
+
+/* Quantity field */
+.product-quantity {
+    flex: 1; /* Allows it to grow */
+    min-width: 100px;
+}
+
+/* Divider */
+.product-divider {
+    margin: 1.5rem 0;
+    border-top: 1px solid #ddd;
+}
+
+/* Product description */
+.product-description {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 1rem;
+}
