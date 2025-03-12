@@ -155,24 +155,12 @@ html, body {
     caret-color: #ec6720 !important; /* Orange cursor */
 }
 
-/* When the mat-mdc-select-arrow svg is focused */
-.mat-mdc-select-arrow svg:focus {
-    fill: #ec6720 !important; /* Orange color for the arrow SVG when focused */
-}
-
-/* When the mat-mdc-select-arrow svg is hovered */
-.mat-mdc-select-arrow svg:hover {
+.mat-mdc-select-arrow svg {
     fill: #ec6720 !important; /* Orange color for the arrow SVG when hovered */
+    outline: none !important;  /* Remove the default focus outline */
 }
 
-/* Optional: if you want to change the border color of the select when focused */
-.mat-mdc-select:focus .mat-mdc-select-arrow svg {
-    fill: #ec6720 !important; /* Orange color for the SVG when the select is focused */
+.mat-mdc-option.mdc-list-item--selected:not(.mdc-list-item--disabled):not(.mat-mdc-option-multiple) {
+    background-color: #fcbd9c !important; /* Orange color for selected item */
+    color: white !important; /* White text color for better contrast */
 }
-
-/* Optional: if you want to change the path color inside the SVG when focused or hovered */
-.mat-mdc-select:focus .mat-mdc-select-arrow svg path,
-.mat-mdc-select-arrow svg:hover path {
-    fill: #ec6720 !important; /* Orange color for the path inside the SVG */
-}
-
