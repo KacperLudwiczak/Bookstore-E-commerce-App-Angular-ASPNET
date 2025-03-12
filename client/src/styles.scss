@@ -25,6 +25,9 @@ $customTheme: mat.define-theme();
     --mdc-checkbox-selected-focus-state-layer-color: #ec6720 !important;
     --mdc-checkbox-selected-hover-state-layer-color: #ec6720 !important;
     --mdc-checkbox-unselected-pressed-state-layer-color: #ec6720 !important;
+    --mat-paginator-container-text-color: #ec6720 !important;
+    --mat-paginator-enabled-icon-color: #ec6720 !important;
+    --mat-paginator-container-background-color: transparent !important;
 }
 
 
@@ -122,3 +125,54 @@ html, body {
   .mdc-radio__native-control:enabled:checked + .mdc-radio__background > .mdc-radio__inner-circle {
     background-color: #ec6720 !important; /* Change inner circle to orange */
 }
+
+/* When the text field is focused */
+.mdc-text-field--focused, 
+.mat-focused .mdc-text-field {
+    border-color: #ec6720 !important; /* Orange border */
+    color: #ec6720 !important; /* Orange text */
+}
+
+/* Style the outline of the input field when focused */
+.mdc-text-field--focused .mdc-notched-outline__leading,
+.mdc-text-field--focused .mdc-notched-outline__notch,
+.mdc-text-field--focused .mdc-notched-outline__trailing {
+    border-color: #ec6720 !important; /* Orange border */
+}
+
+/* When Angular Material form fields (mat-form-field) are focused */
+.mat-mdc-form-field.mat-focused .mdc-notched-outline {
+    border-color: #ec6720 !important; /* Orange border */
+}
+
+/* Label text color when focused */
+.mat-mdc-form-field.mat-focused .mat-mdc-floating-label {
+    color: #ec6720 !important; /* Orange label */
+}
+
+/* When input is focused, change caret (blinking cursor) color */
+.mat-mdc-input-element:focus {
+    caret-color: #ec6720 !important; /* Orange cursor */
+}
+
+/* When the mat-mdc-select-arrow svg is focused */
+.mat-mdc-select-arrow svg:focus {
+    fill: #ec6720 !important; /* Orange color for the arrow SVG when focused */
+}
+
+/* When the mat-mdc-select-arrow svg is hovered */
+.mat-mdc-select-arrow svg:hover {
+    fill: #ec6720 !important; /* Orange color for the arrow SVG when hovered */
+}
+
+/* Optional: if you want to change the border color of the select when focused */
+.mat-mdc-select:focus .mat-mdc-select-arrow svg {
+    fill: #ec6720 !important; /* Orange color for the SVG when the select is focused */
+}
+
+/* Optional: if you want to change the path color inside the SVG when focused or hovered */
+.mat-mdc-select:focus .mat-mdc-select-arrow svg path,
+.mat-mdc-select-arrow svg:hover path {
+    fill: #ec6720 !important; /* Orange color for the path inside the SVG */
+}
+
