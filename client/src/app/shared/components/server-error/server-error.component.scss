@@ -1,0 +1,68 @@
+/* Error Container */
+.error-container {
+    margin-top: 1.25rem; /* mt-5 */
+    padding: 1rem; /* p-4 */
+    background-color: #f3f6f3; /* bg-gray-100 */
+    border-radius: 0.5rem; /* rounded */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-lg */
+}
+
+/* Error Header */
+.error-header {
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: 600; /* font-semibold */
+    margin-bottom: 1rem; /* mb-4 */
+}
+
+/* Error Message */
+.error-message {
+    color: #e11d48; /* Red color for the error message */
+}
+
+/* Error Description */
+.error-description {
+    font-weight: 700; /* font-bold */
+    margin-bottom: 0.5rem; /* mb-2 */
+}
+
+/* Next Steps */
+.error-next-steps {
+    margin-bottom: 0.5rem; /* mb-2 */
+}
+
+/* Ordered List for Next Steps */
+.error-list {
+    list-style-type: decimal; /* list-decimal */
+    margin-left: 1.25rem; /* ml-5 */
+    margin-bottom: 1rem; /* mb-4 */
+}
+
+/* List Item Styling */
+.error-list-item {
+    margin-bottom: 0.25rem; /* mb-1 */
+}
+
+/* Stack Trace Header */
+.stack-trace-header {
+    font-size: 1.125rem; /* text-lg */
+    font-weight: 600; /* font-semibold */
+    margin-bottom: 0.5rem; /* mb-2 */
+}
+
+/* Mat Card for Stack Trace */
+.stack-trace-card {
+    padding: 1rem; /* p-4 */
+    background-color: white; /* bg-white */
+    border-radius: 0.5rem; /* rounded */
+}
+
+/* Code Block Styling */
+.stack-trace-code {
+    display: block;
+    white-space: pre-wrap; /* To keep line breaks and prevent overflow */
+    font-family: 'Courier New', Courier, monospace; /* Monospaced font */
+    background-color: #f9fafb; /* Light gray background */
+    padding: 0.5rem; /* Space around the code */
+    border-radius: 0.25rem; /* Rounded corners */
+    border: 1px solid #d1d5db; /* Border color */
+}
