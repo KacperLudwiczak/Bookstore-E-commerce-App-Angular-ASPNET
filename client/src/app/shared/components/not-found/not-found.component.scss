@@ -1,0 +1,32 @@
+.icon-display {
+    transform: scale(3);
+}
+
+/* Error Container */
+.error-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 24rem; /* min-h-96 */
+    background-color: #f3f4f6; /* bg-gray-100 */
+}
+
+/* Error Content */
+.error-content {
+    text-align: center;
+}
+
+/* Error Title */
+.error-title {
+    font-size: 2.25rem; /* text-4xl */
+    font-weight: 700; /* font-bold */
+    color: #ec6720; /* text-gray-800 */
+    margin-top: 1rem; /* mt-4 */
+}
+
+/* Error Message */
+.error-message {
+    font-size: 1.125rem; /* text-lg */
+    color: #333; /* text-gray-600 */
+    margin-top: 0.5rem; /* mt-2 */
+}
