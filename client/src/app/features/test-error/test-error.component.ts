@@ -8,7 +8,7 @@ import { Component, inject } from '@angular/core';
    styleUrl: './test-error.component.scss'
  })
  export class TestErrorComponent {
-   baseUrl = 'https://localhost:5001/api/';
+   baseUrl = 'http://localhost:5001/api/';
    private http = inject(HttpClient);
    validationErrors?: string[];
  
