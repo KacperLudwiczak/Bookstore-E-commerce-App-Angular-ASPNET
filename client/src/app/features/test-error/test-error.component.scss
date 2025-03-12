@@ -1,0 +1,38 @@
+.error-button {
+    width: 20%;
+    height: 3rem;
+    margin: 0.5rem;
+}
+
+/* Container for error buttons */
+.error-buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Space between buttons */
+    margin-top: 5rem; /* Equivalent to mt-5 */
+}
+
+/* Container for validation errors */
+.validation-errors-container {
+    margin-top: 1.25rem; /* Equivalent to mt-5 */
+    max-width: 32rem; /* Equivalent to max-w-lg */
+    background-color: #fef2f2; /* Light red background */
+    margin-left: auto;
+    margin-right: auto; /* Center the container */
+    padding: 0.5rem; /* Padding inside the container */
+    border-radius: 0.375rem; /* Rounded corners */
+}
+
+/* List of validation errors */
+.validation-errors-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Each validation error item */
+.validation-error {
+    color: #b91c1c; /* Red color for error text */
+    font-size: 1rem;
+    line-height: 1.5;
+}
