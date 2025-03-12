@@ -18,57 +18,15 @@ $customTheme: mat.define-theme();
     --mdc-theme-primary: #ec6720 !important; /* Orange */
     --mdc-theme-secondary: #ff9800 !important; /* Another shade of orange */
     --mdc-theme-on-primary: white !important;
+    --mdc-checkbox-selected-icon-color: #ec6720 !important; 
+    --mdc-checkbox-selected-pressed-icon-color: #ec6720 !important;
+    --mdc-checkbox-selected-focus-icon-color: #ec6720 !important;
+    --mdc-checkbox-selected-hover-icon-color: #ec6720 !important;
+    --mdc-checkbox-selected-focus-state-layer-color: #ec6720 !important;
+    --mdc-checkbox-selected-hover-state-layer-color: #ec6720 !important;
+    --mdc-checkbox-unselected-pressed-state-layer-color: #ec6720 !important;
 }
-  
 
-// :root {
-//     // Customize the checkbox border and icon when checked
-//     @include mat.checkbox-overrides((
-//       selected-checkmark-color: #ec6720,        // Orange color for the checkmark (icon) when selected
-//       selected-icon-color: #ec6720,              // Orange color for the checkbox icon when checked
-//       unselected-icon-color: #888,               // Grey color for the checkbox icon when unchecked
-//       selected-focus-icon-color: #ec6720,        // Orange color for the icon when focused
-//       selected-hover-icon-color: #ec6720,        // Orange color for the icon when hovered
-//       disabled-selected-icon-color: #ec6720,     // Orange color for the icon when disabled and selected
-//       disabled-unselected-icon-color: #888,      // Grey color for the icon when disabled and unselected
-//     ));
-  
-//     // To ensure the checkbox border is orange when checked
-//     .mat-checkbox.mat-accent.mat-checkbox-checked .mat-checkbox-frame {
-//       border-color: #ec6720 !important; /* Orange border when checked */
-//     }
-    
-//     .mat-checkbox.mat-accent.mat-checkbox-checked .mat-checkbox-background {
-//       background-color: transparent !important; /* Make the background transparent */
-//     }
-    
-//     .mat-checkbox .mat-checkbox-frame {
-//       border: 2px solid #888 !important; /* Default border color (light grey for unchecked) */
-//     }
-  
-//     .mat-checkbox .mat-checkbox-background {
-//       background-color: transparent !important; /* Make sure the background is transparent */
-//     }
-  
-//     /* When the checkbox is focused, change the border and icon color */
-//     .mat-checkbox:focus .mat-checkbox-frame {
-//       border-color: #ec6720 !important; /* Orange border on focus */
-//     }
-  
-//     .mat-checkbox:focus .mat-checkbox-background {
-//       background-color: transparent !important; /* Keep background transparent on focus */
-//     }
-  
-//     /* When the checkbox is hovered, change the border and icon color */
-//     .mat-checkbox:hover .mat-checkbox-frame {
-//       border-color: #ec6720 !important; /* Orange border on hover */
-//     }
-  
-//     .mat-checkbox:hover .mat-checkbox-background {
-//       background-color: transparent !important; /* Keep background transparent on hover */
-//     }
-//   }
-  
 
 // Core font styles
 html, body {
@@ -126,10 +84,41 @@ html, body {
     }
 }
 
-// button.match-input-height {
-//     height: var(--mat-form-field-container-height) !important;
-// }
-
 .mdc-notched-outline__notch {
   border-right-style: none !important
+}
+
+.mat-mdc-snack-bar-container.snack-error {
+    --mdc-snackbar-container-color: red;
+    --mat-snack-bar-button-color: #fff;
+    --mdc-snackbar-supporting-text-color: #fff;
+}
+
+.mat-mdc-snack-bar-container.snack-success {
+    --mdc-snackbar-container-color: green;
+    --mat-snack-bar-button-color: #fff;
+    --mdc-snackbar-supporting-text-color: #fff;
+}
+
+.mat-mdc-progress-spinner .mdc-circular-progress__determinate-circle,
+.mat-mdc-progress-spinner .mdc-circular-progress__indeterminate-circle-graphic {
+    stroke: #ec6720 !important; /* Change spinner stroke color */
+}
+
+/* Ensure primary color also applies */
+.mat-mdc-progress-spinner.mat-primary .mdc-circular-progress__indeterminate-circle-graphic {
+    stroke: #ec6720 !important;
+}
+
+.mat-mdc-list-option 
+  .mdc-radio__native-control:enabled:checked + .mdc-radio__background > .mdc-radio__outer-circle,
+.mat-mdc-list-option 
+  .mdc-radio__native-control:enabled:checked + .mdc-radio__background > .mdc-radio__inner-circle {
+    border-color: #ec6720 !important; /* Change border to orange */
+}
+
+/* Ensure the inner circle (dot) also changes color */
+.mat-mdc-list-option 
+  .mdc-radio__native-control:enabled:checked + .mdc-radio__background > .mdc-radio__inner-circle {
+    background-color: #ec6720 !important; /* Change inner circle to orange */
 }
