@@ -9,17 +9,19 @@
             <!-- Product Details -->
             <div>
                 <h1 class="product-title">{{product.name}}</h1>
+                <p>You have {{quantityInCart}} of this item in your cart</p>
                 <p class="product-price">{{product.price | currency}}</p>
     
                 <div class="product-actions">
-                    <button>
+                    <button [disabled]="quantity === quantityInCart" 
+                            (click)="updateCart()">
                         <mat-icon>shopping_cart</mat-icon>
                         Add to cart
                     </button>
     
                     <mat-form-field appearance="outline" class="product-quantity">
                         <mat-label>Quantity</mat-label>
-                        <input matInput type="number">
+                        <input matInput min="0" [(ngModel)]="quantity" type="number">
                     </mat-form-field>
                 </div>
     
