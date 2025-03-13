@@ -28,6 +28,8 @@ $customTheme: mat.define-theme();
     --mat-paginator-container-text-color: #ec6720 !important;
     --mat-paginator-enabled-icon-color: #ec6720 !important;
     --mat-paginator-container-background-color: transparent !important;
+    --mdc-linear-progress-track-color: #fff !important;
+    --mdc-linear-progress-active-indicator-color: #ec6720 !important;
 }
 
 
@@ -85,6 +87,14 @@ html, body {
         border: 2px solid #ec6720; /* Orange-brown border */
         color: #ec6720;
     }
+}
+
+.mdc-linear-progress__buffer-bar {
+    background-color: var(--mdc-linear-progress-track-color);
+}
+
+.mdc-linear-progress__bar-inner {
+    border-color: var(--mdc-linear-progress-active-indicator-color);
 }
 
 .mdc-notched-outline__notch {
