@@ -11,9 +11,12 @@
             <a routerLink="/test-error" routerLinkActive="active">Errors</a>
         </nav>
         <div class="header-actions">
-            <a matBadge="5" matBadgeSize="large" class="custom-badge">
+            <a routerLink="/cart" routerLinkActive="active" 
+            matBadge="{{cartService.itemCount()}}" 
+            matBadgeSize="large" 
+            class="custom-badge">
                 <mat-icon>shopping_cart</mat-icon>
-            </a>
+            </a>         
             <button class="button login-button">Login</button>
             <button class="button register-button">Register</button>
         </div>
