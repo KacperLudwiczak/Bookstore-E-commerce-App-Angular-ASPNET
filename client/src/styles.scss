@@ -28,7 +28,7 @@ $customTheme: mat.define-theme();
     --mat-paginator-container-text-color: #ec6720 !important;
     --mat-paginator-enabled-icon-color: #ec6720 !important;
     --mat-paginator-container-background-color: transparent !important;
-    --mdc-linear-progress-track-color: #fff !important;
+    --mdc-linear-progress-track-color: rgba(255, 255, 255, 0.1) !important;
     --mdc-linear-progress-active-indicator-color: #ec6720 !important;
 }
 
