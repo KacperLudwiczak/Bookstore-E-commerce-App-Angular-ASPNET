@@ -5,8 +5,8 @@
           <h2 class="product-title">{{product.name}}</h2>
           <p class="product-price">{{product.price | currency}}</p>
       </mat-card-content>
-      <mat-card-actions class="product-actions">
-          <button class="button">
+      <mat-card-actions class="product-actions" (click)="$event.stopPropagation()">
+          <button class="button" (click)="cartService.addItemToCart(product)">
               <mat-icon>add_shopping_cart</mat-icon>
               Add to cart
           </button>
