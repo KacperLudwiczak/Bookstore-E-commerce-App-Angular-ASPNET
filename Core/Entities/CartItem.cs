@@ -7,6 +7,6 @@ public class CartItem
     public decimal Price { get; set; }
     public int Quantity { get; set; }
     public required string PictureUrl { get; set; }
-    public required string Brand { get; set; }
-    public required string Type { get; set; }
+    public required string Genre { get; set; }
+    public required string Publisher { get; set; }
 }
