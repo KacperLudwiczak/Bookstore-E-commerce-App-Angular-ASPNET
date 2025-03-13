@@ -1,0 +1,29 @@
+/* Main section container */
+.cart-section {
+    width: 100%;
+}
+
+/* Central container */
+.cart-container {
+    margin: 0 auto;
+    max-width: 1280px; /* max-w-screen-xl */
+}
+
+/* Layout wrapper */
+.cart-layout {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-top: 8rem; /* mt-32 */
+}
+
+/* Cart items section (75% width) */
+.cart-items {
+    width: 75%;
+}
+
+/* Order summary section (25% width) */
+.cart-summary {
+    width: 25%;
+}

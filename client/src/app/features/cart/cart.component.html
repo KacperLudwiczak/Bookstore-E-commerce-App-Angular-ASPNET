@@ -1,0 +1,14 @@
+<section class="cart-section">
+    <div class="cart-container">
+        <div class="cart-layout">
+            <div class="cart-items">
+                @for (item of cartService.cart()?.items; track item.productId) {
+                    <app-cart-item [item]="item"></app-cart-item>
+                }
+            </div>  
+            <div class="cart-summary">
+                <app-order-summary></app-order-summary>
+            </div>
+        </div>
+    </div>
+</section>
