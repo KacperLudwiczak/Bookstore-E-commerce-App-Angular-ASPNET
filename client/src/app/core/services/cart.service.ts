@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Cart, CartItem } from '../../shared/models/cart';
 import { Product } from '../../shared/models/product';
 import { map } from 'rxjs';
-import { environment } from '../../../environment/environment.development';
+import { environment } from '../../../environments/environment.development';
 
 @Injectable({
 providedIn: 'root'
