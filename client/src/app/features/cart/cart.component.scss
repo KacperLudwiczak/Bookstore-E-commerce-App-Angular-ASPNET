@@ -1,26 +1,26 @@
 /* Main section container */
 .cart-section {
-    width: 100%;
+    padding: 2rem 0;
 }
 
 /* Central container */
 .cart-container {
+    max-width: 1280px; /* Adjust for large screens */
     margin: 0 auto;
-    max-width: 1280px; /* max-w-screen-xl */
+    padding: 0 1rem; /* Adds padding on small screens */
+    display: grid;
+    grid-template-columns: 1.5fr 1fr; /* Two-column layout */
+    gap: 2rem; /* Space between image & details */
+    align-items: center;
 }
 
 /* Layout wrapper */
-.cart-layout {
+.cart-items {
     display: flex;
-    width: 100%;
+    width: 75%;
     align-items: flex-start;
     gap: 1.5rem;
     margin-top: 8rem; /* mt-32 */
-}
-
-/* Cart items section (75% width) */
-.cart-items {
-    width: 75%;
 }
 
 /* Order summary section (25% width) */
