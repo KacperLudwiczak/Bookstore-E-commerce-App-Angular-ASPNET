@@ -38,12 +38,51 @@
     gap: 0.75rem;
 }
 
+.cart-item-quantity-controls button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem; /* Adjust width */
+    height: 2.5rem; /* Adjust height */
+    border: none;
+    border-radius: 0.375rem; /* Rounded corners */
+    background-color: #f3f4f6; /* Light gray background */
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    cursor: pointer;
+}
+
+.cart-item-quantity-controls button:hover {
+    background-color: #e5e7eb; /* Slightly darker on hover */
+}
+
+.cart-item-quantity-controls button:active {
+    transform: scale(0.95); /* Slight press effect */
+}
+
+/* Specific colors for decrease and increase buttons */
 .quantity-decrease {
-    color: #dc2626 !important; /* text-red-600 */
+    color: white !important;
+    background-color: #f53939 !important; /* Red for decrease */
 }
 
 .quantity-increase {
-    color: #16a34a !important; /* text-green-600 */
+    color: white !important;
+    background-color: #16a34a !important; /* Green for increase */
+}
+
+.icon-button {
+    background-color: #fff !important;
+    &:hover {
+        background-color: #fff !important;
+    }
+}
+/* Hover effects for buttons */
+.quantity-decrease:hover {
+    background-color: #b91c1c !important;
+}
+
+.quantity-increase:hover {
+    background-color: #15803d !important;
 }
 
 .cart-item-quantity-text {
@@ -55,7 +94,7 @@
 /* Price Section */
 .cart-item-price {
     text-align: end;
-    width: 8rem; /* w-32 */
+    width: 5rem; /* w-32 */
 }
 
 .cart-item-price p {
@@ -93,4 +132,11 @@
 .delete-button {
     width: 7rem;
     height: 2.5rem;
+    border: 2px solid #f53939; /* Orange-brown border */
+    color: #f53939;
+
+    &:hover {
+        background-color: #f53939;
+        color: #fff; /* White text on hover */
+    }
 }

@@ -5,11 +5,11 @@
         </a>
         <div class="cart-item-quantity">
             <div class="cart-item-quantity-controls">
-                <button (click)="decrementQuantity()">
+                <button (click)="decrementQuantity()" class="icon-button">
                     <mat-icon class="quantity-decrease">remove</mat-icon>
                 </button>
                 <div class="cart-item-quantity-text">{{item().quantity}}</div>
-                <button (click)="incrementQuantity()">
+                <button (click)="incrementQuantity()" class="icon-button">
                     <mat-icon class="quantity-increase">add</mat-icon>
                 </button>
             </div>
