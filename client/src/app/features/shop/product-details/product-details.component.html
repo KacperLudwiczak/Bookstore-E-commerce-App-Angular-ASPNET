@@ -13,10 +13,9 @@
                 <p class="product-price">{{product.price | currency}}</p>
     
                 <div class="product-actions">
-                    <button [disabled]="quantity === quantityInCart" 
-                            (click)="updateCart()">
+                    <button [disabled]="quantity === quantityInCart" (click)="updateCart()">
                         <mat-icon>shopping_cart</mat-icon>
-                        Add to cart
+                        {{getButtonText()}}
                     </button>
     
                     <mat-form-field appearance="outline" class="product-quantity">
@@ -26,7 +25,6 @@
                 </div>
     
                 <div class="product-divider"></div>
-    
                 <p class="product-description">{{product.description}}</p>
             </div>
         </div>
