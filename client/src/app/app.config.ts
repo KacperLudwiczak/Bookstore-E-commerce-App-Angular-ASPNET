@@ -1,9 +1,20 @@
-import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
+import { APP_INITIALIZER, ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
 import { provideRouter } from '@angular/router';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { provideHttpClient, withInterceptors } from '@angular/common/http';
- import { errorInterceptor } from './core/interceptors/error.interceptor';
- import { loadingInterceptor } from './core/interceptors/loading.interceptor';
+import { errorInterceptor } from './core/interceptors/error.interceptor';
+import { loadingInterceptor } from './core/interceptors/loading.interceptor';
+import { InitService } from './core/services/init.service';
+import { lastValueFrom } from 'rxjs';
+
+function initializeApp(initService: InitService) {
+  return () => lastValueFrom(initService.init()).finally(() => {
+    const splash = document.getElementById('initial-splash');
+    if (splash) {
+      splash.remove();
+    }
+  })
+}
 
 import { routes } from './app.routes';
 
@@ -12,6 +23,12 @@ export const appConfig: ApplicationConfig = {
     provideZoneChangeDetection({ eventCoalescing: true }), 
     provideRouter(routes), 
     provideAnimationsAsync(),
-    provideHttpClient(withInterceptors([errorInterceptor, loadingInterceptor]))
+    provideHttpClient(withInterceptors([errorInterceptor, loadingInterceptor])),
+    {
+      provide: APP_INITIALIZER,
+      useFactory: initializeApp,
+      multi: true,
+      deps: [InitService]
+    }
   ]
 };
