@@ -10,7 +10,6 @@
 
 /* Order summary card styling */
 .order-summary-card {
-    background-color: white;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -87,18 +86,21 @@
 
 /* Voucher card styling */
 .voucher-card {
-    background-color: white;
-    border-radius: 0.5rem;
-    border: 1px solid #e5e7eb;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 /* Voucher form */
 .voucher-form {
+    padding: 1rem;
     display: flex;
     flex-direction: column;
-    padding: 0.5rem;
-    gap: 0.5rem;
+    gap: 1rem;
+    width: 60%;
 }
 
 /* Voucher label */
