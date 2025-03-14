@@ -1,5 +1,5 @@
 .cart-section {
-    padding: 2rem 0;
+    padding: 0.5rem 0;
 }
 
 .cart-container {
@@ -9,7 +9,7 @@
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     gap: 2rem;
-    align-items: center;
+    align-items: start;
 }
 
 .cart-layout {
@@ -22,4 +22,10 @@
 
 .cart-items {
     width: 100%;
+}
+
+.order-summary {
+    position: sticky;
+    top: 2rem;
+    align-self: start; 
 }
