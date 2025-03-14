@@ -1,6 +1,5 @@
 /* Cart Item Wrapper */
 .cart-item {
-    background-color: white;
     padding: 1rem;
     margin-bottom: 1rem; /* mb-4 */
 }
@@ -11,6 +10,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 1.5rem;
+    height: 8rem;
 }
 
 /* Product Image */
@@ -20,8 +20,8 @@
 }
 
 .cart-item-image img {
-    height: 5rem; /* h-20 */
-    width: 5rem; /* w-20 */
+    height: 9rem; 
+    width: 6.5rem;
 }
 
 /* Quantity Controls */
@@ -71,12 +71,23 @@
 }
 
 .cart-item-name {
-    font-weight: 500;
+    text-decoration: none; /* Removes underline */
+    color: black; /* Sets text color to black */
+    font-weight: bold; /* Optional: makes the text bold */
+    transition: color 0.3s ease; /* Smooth transition for hover effects */
 }
 
-/* Actions (Delete Button) */
+.cart-item-name:hover {
+    color: #ec6720; /* Optional: Change color on hover */
+}
+
 .cart-item-actions {
     display: flex;
     align-items: center;
     gap: 1rem;
+}
+
+.delete-button {
+    width: 7rem;
+    height: 2.5rem;
 }
