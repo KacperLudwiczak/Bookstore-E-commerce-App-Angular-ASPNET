@@ -45,6 +45,29 @@ html, body {
     color: #ec6720 !important;
 }
 
+/* Centering Container */
+.splash-container {
+    display: flex;
+    align-items: center;  /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+    height: 100vh;  /* Full height of the viewport */
+    width: 100%;    /* Full width */
+    background-color: #ffffff; /* Optional: Set a background color */
+}
+
+/* Inner Content */
+.splash-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Logo Styling */
+.splash-logo {
+    max-width: 12rem; /* Adjust size as needed */
+    height: auto;
+}
+
 // Core button class for reuse
 .button {
     width: 100%; /* w-full */
