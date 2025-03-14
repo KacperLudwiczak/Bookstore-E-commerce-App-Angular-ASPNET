@@ -54,12 +54,16 @@ nav {
     margin-left: auto
 }
 
+.custom-badge {
+    margin-top: 0.5rem;
+}
+
 .custom-badge .mat-badge-content {
     width: 1.5rem; 
     height: 1.5rem;
     font-size: 0.875rem; 
     line-height: 1.6rem;
-    background: #ec6720
+    background: #ec6720;
 }
 
 .custom-badge .mat-icon {
@@ -70,7 +74,7 @@ nav {
 }
 
 .login-button {
-    margin-left: 1.5rem; 
+    margin-left: 0.75rem; 
 }
 
 .register-button {
