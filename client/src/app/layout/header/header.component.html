@@ -18,7 +18,7 @@
             </a>         
             @if (accountService.currentUser()) {
                 <button class="button profile-button" [matMenuTriggerFor]="menu">
-                    <span class="profile-text">{{accountService.currentUser()?.firstName}}</span>
+                    <span class="profile-text">{{accountService.currentUser()?.firstName}} {{accountService.currentUser()?.lastName}}</span>
                     <mat-icon class="profile-icon">account_circle</mat-icon>
                 </button>
             } @else {
