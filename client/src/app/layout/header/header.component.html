@@ -17,13 +17,13 @@
                 <mat-icon>shopping_cart</mat-icon>
             </a>         
             @if (accountService.currentUser()) {
-                <button mat-button [matMenuTriggerFor]="menu">
+                <button class="button" [matMenuTriggerFor]="menu">
                     <mat-icon>arrow_drop_down</mat-icon>
                     <span>{{accountService.currentUser()?.email}}</span>
                 </button>
             } @else {
-                <button class="button login-button">Login</button>
-                <button class="button register-button">Register</button>
+                <button class="button login-button" routerLink="/account/login">Login</button>
+                <button class="button register-button" routerLink="/account/register">Register</button>
             }
         </div>
     </div>
