@@ -1,0 +1,52 @@
+/* Login Card */
+.login-card {
+    max-width: 32rem; /* max-w-lg */
+    margin: 8rem auto 0; /* mt-32 */
+    padding: 2rem; /* p-8 */
+    background-color: #ffffff; /* White background */
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Login Header */
+.login-header {
+    text-align: center;
+    margin-bottom: 1.5rem; /* mb-6 */
+}
+
+/* Title */
+.login-title {
+    font-size: 1.875rem; /* text-3xl */
+    font-weight: 600; /* font-semibold */
+    color: #ec6720; /* Primary color */
+}
+
+/* Form Fields */
+.form-field {
+    width: 100%; /* w-full */
+    margin-bottom: 1rem; /* mb-4 */
+}
+
+/* Input Fields */
+.form-field input {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.375rem;
+}
+
+/* Login Button */
+.login-button {
+    width: 100%; /* w-full */
+    padding: 0.5rem; /* py-2 */
+    background-color: #ec6720 !important;
+    color: #ffffff !important;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 0.375rem;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Button Hover */
+.login-button:hover {
+    background-color: #cf5a1c !important;
+}
