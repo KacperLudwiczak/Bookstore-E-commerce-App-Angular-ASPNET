@@ -17,9 +17,9 @@
                 <mat-icon>shopping_cart</mat-icon>
             </a>         
             @if (accountService.currentUser()) {
-                <button class="button" [matMenuTriggerFor]="menu">
-                    <mat-icon>arrow_drop_down</mat-icon>
-                    <span>{{accountService.currentUser()?.email}}</span>
+                <button class="button profile-button" [matMenuTriggerFor]="menu">
+                    <span class="profile-text">{{accountService.currentUser()?.firstName}}</span>
+                    <mat-icon class="profile-icon">account_circle</mat-icon>
                 </button>
             } @else {
                 <button class="button login-button" routerLink="/account/login">Login</button>
