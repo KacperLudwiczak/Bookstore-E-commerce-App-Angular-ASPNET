@@ -112,6 +112,10 @@ html, body {
     }
 }
 
+.mat-mdc-menu-content {
+    background-color: #fff;
+}
+
 .mdc-linear-progress__buffer-bar {
     background-color: var(--mdc-linear-progress-track-color);
 }
@@ -194,6 +198,6 @@ html, body {
 }
 
 .mat-mdc-option.mdc-list-item--selected:not(.mdc-list-item--disabled):not(.mat-mdc-option-multiple) {
-    background-color: #fcbd9c !important; /* Orange color for selected item */
+    background-color: #fa8241 !important; /* Orange color for selected item */
     color: white !important; /* White text color for better contrast */
 }

@@ -111,38 +111,34 @@ nav {
     background-color: transparent; /* Keep it transparent */
 }
 
-/* Menu Styling */
 .custom-menu {
-    padding: 0.5rem 1rem; /* px-5 */
+    padding: 1rem;
     min-width: 12rem;
+    background-color: #fff;
 }
 
-/* Menu Items */
 .menu-item {
     display: flex;
     align-items: center;
-    gap: 0.75rem; /* px-3 */
+    background-color: #fff;
+    gap: 0.75rem;
     padding: 0.75rem 1rem;
     font-size: 1rem;
     font-weight: 500;
     width: 100%;
-    border-radius: 0.375rem;
+    border: none;
     transition: background 0.2s ease-in-out;
 }
 
-/* Menu Item Hover */
 .menu-item:hover {
-    background-color: #f3f4f6; /* Light gray hover effect */
+    background-color: #f7d0bb;
 }
 
-/* Icons */
 .menu-icon {
     font-size: 1.5rem;
-    color: #4b5563; /* Neutral gray */
+    color: #ec6720;
 }
 
-/* Divider */
-.menu-divider {
-    margin: 0.5rem 0;
-    border-color: #e5e7eb; /* Soft gray */
+.menu-text {
+    color: #ec6720;
 }
