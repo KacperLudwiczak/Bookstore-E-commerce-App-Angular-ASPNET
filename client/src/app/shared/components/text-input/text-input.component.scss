@@ -1,0 +1,35 @@
+/* Form Field Styling */
+.form-field {
+    width: 100%; /* Ensures full width */
+    margin-bottom: 1rem; /* Equivalent to mb-4 */
+}
+
+/* Error Message Styling */
+mat-error {
+    color: #dc2626 !important; /* Red color for errors */
+    font-size: 0.875rem; /* Slightly smaller text */
+    font-weight: 500;
+}
+
+/* Input Field */
+.form-field input {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.375rem;
+}
+
+/* Outline Appearance */
+.mat-form-field-appearance-outline .mat-form-field-outline {
+    color: #ccc; /* Light gray border */
+}
+
+/* When Focused */
+.mat-form-field-appearance-outline.mat-focused .mat-form-field-outline {
+    color: #ec6720; /* Custom orange when focused */
+}
+
+/* Placeholder Text */
+::placeholder {
+    color: #9ca3af; /* Light gray */
+    font-size: 0.875rem;
+}
