@@ -1,0 +1,69 @@
+/* Billing Information */
+.billing-info {
+    margin-top: 1rem; /* mt-4 */
+    width: 100%;
+}
+
+.billing-title {
+    font-size: 1.125rem; /* text-lg */
+    font-weight: 600; /* font-semibold */
+}
+
+.billing-details {
+    margin-top: 0.5rem;
+}
+
+.billing-details dt {
+    font-weight: 500; /* font-medium */
+}
+
+.billing-details dd {
+    margin-top: 0.25rem;
+    color: #6b7280; /* text-gray-500 */
+}
+
+/* Order Summary */
+.order-summary {
+    margin-top: 1.5rem; /* mt-6 */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Order Table */
+.order-table-container {
+    border-bottom: 1px solid #e5e7eb; /* border-gray-200 */
+}
+
+.order-table {
+    width: 100%;
+    text-align: center;
+}
+
+.order-table tbody {
+    border-top: 1px solid #e5e7eb;
+}
+
+.order-item {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.order-item-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.order-item-image {
+    width: 2.5rem; /* w-10 */
+    height: 2.5rem; /* h-10 */
+}
+
+.order-quantity {
+    padding: 1rem;
+}
+
+.order-price {
+    padding: 1rem;
+    text-align: right;
+}

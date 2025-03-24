@@ -1,0 +1,30 @@
+<div class="billing-info">
+    <h4 class="billing-title">Billing and delivery information</h4>
+    <dl class="billing-details">
+        <dt>Shipping address</dt>
+        <dd>{{confirmationToken?.shipping | address}}</dd>
+        <dt>Payment details</dt>
+        <dd>{{confirmationToken?.payment_method_preview | paymentCard}}</dd>
+    </dl>
+</div>
+
+<div class="order-summary">
+    <div class="order-table-container">
+        <table class="order-table">
+            <tbody>
+                @for (item of cartService.cart()?.items; track item.productId) {
+                    <tr>
+                        <td class="order-item">
+                            <div class="order-item-content">
+                                <img src="{{item.pictureUrl}}" alt="product image" class="order-item-image">
+                                <span>{{item.productName}}</span>
+                            </div>
+                        </td>
+                        <td class="order-quantity">x{{item.quantity}}</td>
+                        <td class="order-price">{{item.price | currency}}</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
