@@ -3,10 +3,11 @@
 }
 
 .cart-empty-container {
-    max-width: 1280px;
     padding: 1rem 0.5rem; 
     background-color: white;
     width: 100%;
+    display: flex;
+    justify-content: center; 
 }
 
 .cart-empty-content {
@@ -16,6 +17,7 @@
     justify-content: center;
     padding: 3rem 0; /* py-12 */
     width: 100%;
+    text-align: center;
 }
 
 .cart-empty-icon {
