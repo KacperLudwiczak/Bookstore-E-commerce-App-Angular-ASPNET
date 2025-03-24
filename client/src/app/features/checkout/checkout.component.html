@@ -23,27 +23,27 @@
 
             <mat-step label="Shipping" [completed]="completionStatus().delivery">
                 <app-checkout-delivery (deliveryComplete)="handleDeliveryChange($event)"></app-checkout-delivery>
-                <div class="step-buttons">
-                    <button matStepperPrevious mat-stroked-button>Back</button>
-                    <button [disabled]="!completionStatus().delivery" matStepperNext mat-flat-button>Next</button>
+                <div class="step-2-buttons">
+                    <button matStepperPrevious class="button continue-button">Back</button>
+                    <button [disabled]="!completionStatus().delivery" matStepperNext class="button next-button">Next</button>
                 </div>
             </mat-step>
 
             <mat-step label="Payment" [completed]="completionStatus().card">
                 <div id="payment-element"></div>
-                <div class="step-buttons">
-                    <button matStepperPrevious mat-stroked-button>Back</button>
-                    <button [disabled]="!completionStatus().card" matStepperNext mat-flat-button>Next</button>
+                <div class="step-2-buttons">
+                    <button matStepperPrevious class="button continue-button">Back</button>
+                    <button [disabled]="!completionStatus().card" matStepperNext class="button next-button">Next</button>
                 </div>
             </mat-step>
 
             <mat-step label="Confirmation">
                 <app-checkout-review [confirmationToken]="confirmationToken"></app-checkout-review>
-                <div class="step-buttons">
-                    <button matStepperPrevious mat-stroked-button>Back</button>
+                <div class="step-2-buttons">
+                    <button matStepperPrevious class="button continue-button">Back</button>
                     <button 
                         [disabled]="!confirmationToken || loading"
-                        (click)="confirmPayment(stepper)" mat-flat-button>
+                        (click)="confirmPayment(stepper)" class="button next-button">
                         @if (loading) {
                             <mat-spinner diameter="20"></mat-spinner>
                         } @else {

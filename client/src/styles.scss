@@ -226,3 +226,7 @@ html, body {
     color: #ec6720 !important;
 }
 
+.CheckboxInput--checked {
+    background-color: var(--mdc-theme-primary) !important;
+    border-color: var(--mdc-theme-primary) !important;
+}
