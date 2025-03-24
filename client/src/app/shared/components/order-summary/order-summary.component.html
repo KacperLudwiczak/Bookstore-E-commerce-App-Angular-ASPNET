@@ -30,7 +30,7 @@
                 </dd>
             </dl>
         </div>
-
+        @if (location.path() !== '/checkout') {
         <div class="buttons">
             <button routerLink="/checkout" class="button order-buttons">
                 Checkout
@@ -38,7 +38,8 @@
             <button routerLink="/shop" class="button order-buttons">
                 Continue Shopping
             </button>
-        </div>        
+        </div> 
+        }       
     </div>
 
     <div class="voucher-card">
