@@ -1,10 +1,39 @@
-/* Container for the authorization message */
-.auth-container {
-    margin-top: 1.25rem; /* mt-5 */
+/* Checkout Container */
+.checkout-container {
+    display: flex;
+    gap: 1.5rem; /* Space between stepper and summary */
+    margin-top: 8rem; /* mt-32 */
 }
 
-/* Authorization message text */
-.auth-message {
-    font-size: 1.5rem; /* text-2xl */
-    font-weight: 600; /* Make it slightly bold for emphasis */
+/* Stepper Section */
+.checkout-steps {
+    width: 75%; /* w-3/4 */
+}
+
+/* Order Summary Section */
+.checkout-summary {
+    width: 25%; /* w-1/4 */
+}
+
+/* Stepper Styling */
+.checkout-stepper {
+    background: white;
+    border: 1px solid #e5e7eb; /* Gray border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+/* Save Address Checkbox */
+.save-address {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.25rem; /* mt-1 */
+}
+
+/* Step Buttons */
+.step-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem; /* mt-6 */
 }
