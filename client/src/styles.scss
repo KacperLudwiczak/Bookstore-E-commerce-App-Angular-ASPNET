@@ -230,3 +230,12 @@ html, body {
     background-color: var(--mdc-theme-primary) !important;
     border-color: var(--mdc-theme-primary) !important;
 }
+
+
+.mat-mdc-radio-button .mdc-radio__native-control:enabled:checked+.mdc-radio__background>.mdc-radio__outer-circle, .mat-mdc-radio-button .mdc-radio__native-control:enabled:checked+.mdc-radio__background>.mdc-radio__inner-circle {
+    border-color: var(--mdc-theme-primary) !important;
+}
+
+.mat-mdc-radio-button .mdc-radio__native-control:enabled:checked+.mdc-radio__background>.mdc-radio__outer-circle, .mat-mdc-radio-button .mdc-radio__native-control:enabled:checked+.mdc-radio__background>.mdc-radio__inner-circle {
+    border-color: var(--mdc-theme-primary) !important;
+}
