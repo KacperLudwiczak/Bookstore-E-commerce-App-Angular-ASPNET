@@ -8,7 +8,6 @@ selector: 'app-empty-state',
 standalone: true,
 imports: [
     MatIcon,
-    MatButton,
     RouterLink
 ],
 templateUrl: './empty-state.component.html',
