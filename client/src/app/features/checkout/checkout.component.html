@@ -16,13 +16,13 @@
                     </mat-checkbox>
                 </div>
                 <div class="step-buttons">
-                    <button routerLink="/shop" mat-stroked-button>Continue shopping</button>
-                    <button [disabled]="!completionStatus().address" matStepperNext mat-flat-button>Next</button>
+                    <button routerLink="/shop" class="button continue-button">Continue shopping</button>
+                    <button [disabled]="!completionStatus().address" matStepperNext class="button next-button">Next</button>
                 </div>
             </mat-step>
 
             <mat-step label="Shipping" [completed]="completionStatus().delivery">
-                <!-- <app-checkout-delivery (deliveryComplete)="handleDeliveryChange($event)"></app-checkout-delivery> -->
+                <app-checkout-delivery (deliveryComplete)="handleDeliveryChange($event)"></app-checkout-delivery>
                 <div class="step-buttons">
                     <button matStepperPrevious mat-stroked-button>Back</button>
                     <button [disabled]="!completionStatus().delivery" matStepperNext mat-flat-button>Next</button>
@@ -38,7 +38,7 @@
             </mat-step>
 
             <mat-step label="Confirmation">
-                <!-- <app-checkout-review [confirmationToken]="confirmationToken"></app-checkout-review> -->
+                <app-checkout-review [confirmationToken]="confirmationToken"></app-checkout-review>
                 <div class="step-buttons">
                     <button matStepperPrevious mat-stroked-button>Back</button>
                     <button 

@@ -14,6 +14,8 @@ import { AccountService } from '../../core/services/account.service';
 import { CartService } from '../../core/services/cart.service';
 import { CurrencyPipe, JsonPipe } from '@angular/common';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { CheckoutReviewComponent } from './checkout-review/checkout-review.component';
+import { CheckoutDeliveryComponent } from './checkout-delivery/checkout-delivery.component';
 
 @Component({
   selector: 'app-checkout',
@@ -23,6 +25,8 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     MatStepperModule,
     MatButton,
     RouterLink,
+    CheckoutDeliveryComponent,
+    CheckoutReviewComponent,
     MatCheckboxModule,
     CurrencyPipe,
     MatProgressSpinnerModule

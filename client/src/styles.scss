@@ -201,3 +201,28 @@ html, body {
     background-color: #fa8241 !important; /* Orange color for selected item */
     color: white !important; /* White text color for better contrast */
 }
+
+.mat-step-icon-selected {
+    background-color: #ec6720 !important;
+}
+
+.Input:focus, .p-Input--focused {
+    border-color: #ec6720 !important;
+}
+
+.mat-step-icon-state-edit {
+    background-color: #ec6720 !important;
+}
+
+.mat-step-header {
+    margin-bottom: 1rem !important;
+}
+
+.mat-stepper-horizontal-line {
+    margin-bottom: 1rem !important;
+}
+
+.mdc-radio__native-control{
+    color: #ec6720 !important;
+}
+

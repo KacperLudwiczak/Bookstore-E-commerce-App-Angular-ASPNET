@@ -17,18 +17,15 @@
 
 /* Stepper Styling */
 .checkout-stepper {
-    background: white;
-    border: 1px solid #e5e7eb; /* Gray border */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
     padding: 1.5rem;
-    border-radius: 0.5rem;
+    background-color: #fff;
 }
 
 /* Save Address Checkbox */
 .save-address {
     display: flex;
     justify-content: flex-end;
-    margin-top: 0.25rem; /* mt-1 */
+    margin-top: 1.25rem; 
 }
 
 /* Step Buttons */
@@ -36,4 +33,24 @@
     display: flex;
     justify-content: space-between;
     margin-top: 1.5rem; /* mt-6 */
+}
+
+.continue-button {
+    width: 25%;
+}
+
+.next-button {
+    width: 15%;
+}
+
+.next-button:hover {
+    background-color: #ea580c;
+}
+
+.next-button:disabled {
+    background-color: #9CA3AF; 
+    border: none;
+    color: #fff; 
+    cursor: not-allowed;
+    opacity: 0.6;
 }
