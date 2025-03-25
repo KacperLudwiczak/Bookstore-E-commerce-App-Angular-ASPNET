@@ -416,6 +416,10 @@ namespace Infrastructure.Migrations
                             b1.Property<int>("OrderId")
                                 .HasColumnType("int");
 
+                            b1.Property<string>("Brand")
+                                .IsRequired()
+                                .HasColumnType("nvarchar(max)");
+
                             b1.Property<int>("ExpMonth")
                                 .HasColumnType("int");
 
@@ -424,10 +428,6 @@ namespace Infrastructure.Migrations
 
                             b1.Property<int>("Last4")
                                 .HasColumnType("int");
-
-                            b1.Property<string>("Publisher")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
 
                             b1.HasKey("OrderId");
 

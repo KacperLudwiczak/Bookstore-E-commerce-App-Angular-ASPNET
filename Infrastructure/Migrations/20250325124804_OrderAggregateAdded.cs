@@ -28,7 +28,7 @@ namespace Infrastructure.Migrations
                     ShippingAddress_Country = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     DeliveryMethodId = table.Column<int>(type: "int", nullable: false),
                     PaymentSummary_Last4 = table.Column<int>(type: "int", nullable: false),
-                    PaymentSummary_Publisher = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PaymentSummary_Brand = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     PaymentSummary_ExpMonth = table.Column<int>(type: "int", nullable: false),
                     PaymentSummary_ExpYear = table.Column<int>(type: "int", nullable: false),
                     Subtotal = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
