@@ -1,0 +1,68 @@
+/* Main Container */
+.home-container {
+    max-width: 1536px; /* max-w-screen-2xl */
+    margin: 8rem auto 0; /* mt-32, mx-auto */
+    padding: 0 1rem; /* px-4 */
+}
+
+/* Hero Section */
+.home-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0; /* py-16 */
+    margin-top: 5rem; /* mt-20 */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Background Image */
+.home-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem; /* rounded-2xl */
+    z-index: 0;
+}
+
+/* Hero Content */
+.home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem; /* p-8 */
+    border-radius: 1rem; /* rounded-2xl */
+    position: relative;
+    z-index: 1;
+}
+
+/* Hero Title */
+.home-title {
+    margin: 1.5rem 0; /* my-6 */
+    font-size: 4rem; /* text-6xl */
+    font-weight: 800; /* font-extrabold */
+    color: #333; /* text-white */
+    text-align: center;
+}
+
+.home-button {
+    background: linear-gradient(to right, #f97316, #ea580c);
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: 600; /* font-semibold */
+    color: white; /* text-white */
+    border-radius: 1rem; /* rounded-2xl */
+    padding: 1rem 2rem; /* px-8 py-4 */
+    border: 2px solid transparent;
+    margin-top: 2rem; /* mt-8 */
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Button Hover Effect */
+.home-button:hover {
+    border-color: white;
+    transform: scale(1.15);
+}
