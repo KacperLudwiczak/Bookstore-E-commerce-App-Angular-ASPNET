@@ -24,9 +24,9 @@ styleUrl: './checkout-success.component.scss'
 export class CheckoutSuccessComponent implements OnDestroy {
     signalrService = inject(SignalrService);
     private orderService = inject(OrderService);
-  
+
     ngOnDestroy(): void {
-      this.orderService.orderComplete = false;
-      this.signalrService.orderSignal.set(null);
+        this.orderService.orderComplete = false;
+        this.signalrService.orderSignal.set(null);
     }
 }
