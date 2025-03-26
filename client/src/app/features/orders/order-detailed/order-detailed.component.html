@@ -1,0 +1,79 @@
+<mat-card class="order-summary-container">
+    <div class="order-summary-content">
+        <div class="order-summary-header">
+            <!-- <h2 class="order-summary-title">Order summary for order #{{order.id}}</h2> -->
+            <button routerLink="/orders" mat-stroked-button>Return to orders</button>
+        </div>
+
+        <div class="order-info-section">
+            <div class="order-info-block">
+                <h4 class="order-info-title">Billing and delivery information</h4>
+                <dl class="order-info-item">
+                    <dt>Shipping address</dt>
+                    <!-- <dd>{{order.shippingAddress | address}}</dd> -->
+                </dl>
+                <dl class="order-info-item">
+                    <dt>Payment info</dt>
+                    <!-- <dd>{{order.paymentSummary | paymentCard}}</dd> -->
+                </dl>
+            </div>
+
+            <div class="order-info-block">
+                <h4 class="order-info-title">Order details</h4>
+                <dl class="order-info-item">
+                    <dt>Email address</dt>
+                    <!-- <dd>{{order.buyerEmail}}</dd> -->
+                </dl>
+                <dl class="order-info-item">
+                    <dt>Order status</dt>
+                    <!-- <dd>{{order.status}}</dd> -->
+                </dl>
+                <dl class="order-info-item">
+                    <dt>Order date</dt>
+                    <!-- <dd>{{order.orderDate | date: 'medium'}}</dd> -->
+                </dl>
+            </div>
+        </div>
+
+        <div class="order-items-container">
+            <table class="order-items-table">
+                <!-- <tbody>
+                    @for (item of order.orderItems; track item.productId) {
+                        <tr class="order-item-row">
+                            <td>
+                                <div class="order-item-info">
+                                    <img src="{{item.pictureUrl}}" alt="product image" class="order-item-image">
+                                    <span>{{item.productName}}</span>
+                                </div>
+                            </td>
+                            <td>x{{item.quantity}}</td>
+                            <td>{{item.price | currency}}</td>
+                        </tr>
+                    }
+                </tbody> -->
+            </table>
+        </div>
+
+        <div class="order-total-summary">
+            <p class="order-total-title">Order summary</p>
+            <div class="order-total-details">
+                <dl class="order-total-item">
+                    <dt>Subtotal</dt>
+                    <!-- <dd>{{order.subtotal | currency}}</dd> -->
+                </dl>
+                <dl class="order-total-item order-total-discount">
+                    <dt>Discount</dt>
+                    <dd>- $0.00</dd>
+                </dl>
+                <dl class="order-total-item">
+                    <dt>Delivery fee</dt>
+                    <!-- <dd>{{order.shippingPrice | currency}}</dd> -->
+                </dl>
+                <dl class="order-total-item order-total-amount">
+                    <dt>Total</dt>
+                    <!-- <dd>{{order.total | currency}}</dd> -->
+                </dl>
+            </div>
+        </div>
+    </div>
+</mat-card>
