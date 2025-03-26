@@ -17,7 +17,8 @@ imports: [
     AddressPipe,
     CurrencyPipe,
     PaymentCardPipe,
-    NgIf],
+    NgIf
+],
 templateUrl: './checkout-success.component.html',
 styleUrl: './checkout-success.component.scss'
 })
