@@ -1,9 +1,9 @@
 @if (order) {
-<mat-card class="order-summary-container">
+<section class="order-summary-container">
     <div class="order-summary-content">
         <div class="order-summary-header">
             <h2 class="order-summary-title">Order summary for order #{{order.id}}</h2>
-            <button routerLink="/orders" class="button">Return to orders</button>
+            <button routerLink="/orders" class="button order-button">Return to orders</button>
         </div>
 
         <div class="order-info-section">
@@ -77,5 +77,5 @@
             </div>
         </div>
     </div>
-</mat-card>
+</section>
 }

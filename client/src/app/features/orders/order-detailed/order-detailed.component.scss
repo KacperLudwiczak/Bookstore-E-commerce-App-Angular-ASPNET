@@ -1,10 +1,9 @@
 /* Order Summary Container */
 .order-summary-container {
     background-color: white;
-    padding: 2rem 0; /* py-8 */
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
-    max-width: 1024px; /* max-w-screen-lg */
-    margin: 0 auto; /* mx-auto */
+    padding: 2rem 0;
+    max-width: 1024px; 
+    margin: 0 auto;
 }
 
 /* Order Summary Content */
@@ -21,18 +20,33 @@
 }
 
 .order-summary-title {
-    font-size: 1.5rem; /* text-2xl */
-    font-weight: 600; /* font-semibold */
+    font-size: 1.5rem;
+    font-weight: 600;
     text-align: center;
 }
 
-/* Billing and Delivery Information */
 .order-info-section {
-    margin-top: 2rem; /* mt-8 */
-    padding-top: 1rem; /* py-3 */
-    border-top: 1px solid #e5e7eb; /* border-t border-gray-200 */
-    display: flex;
-    gap: 4rem; /* gap-16 */
+    margin-bottom: 1rem;
+    border-top: 1px solid #e5e7eb;
+}
+
+.order-info-item {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.order-info-item dt {
+    font-weight: bold;
+    margin-left: 1.5rem;
+}
+
+.order-info-item dd {
+    margin-top: 0.5rem;
+    margin-left: 2.5rem;
+}
+
+.order-button {
+    width: 20%;
 }
 
 .order-info-block {
@@ -42,34 +56,15 @@
 }
 
 .order-info-title {
-    font-size: 1.125rem; /* text-lg */
-    font-weight: 600; /* font-semibold */
-}
-
-.order-info-item dt {
-    font-weight: 500; /* font-medium */
-}
-
-.order-info-item dd {
-    margin-top: 0.25rem; /* mt-1 */
-    font-weight: 300; /* font-light */
-}
-
-/* Order Items Table */
-.order-items-container {
-    margin-top: 1rem; /* mt-4 */
-    border-top: 1px solid #e5e7eb;
-    border-bottom: 1px solid #e5e7eb; /* border-y border-gray-200 */
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.125rem; 
+    font-weight: 600; 
 }
 
 .order-items-table {
     width: 100%;
     text-align: center;
-}
-
-.order-items-table tbody {
-    border-top: 1px solid #e5e7eb;
-    border-bottom: 1px solid #e5e7eb; /* divide-y divide-gray-200 */
 }
 
 .order-item-row td {
@@ -83,8 +78,8 @@
 }
 
 .order-item-image {
-    width: 2.5rem; /* w-10 */
-    height: 2.5rem; /* h-10 */
+    width: 4.25rem;
+    height: 5.5rem;
 }
 
 /* Order Summary Section */
@@ -92,8 +87,6 @@
     padding: 1rem; /* p-4 */
     background-color: white;
     border-top: 1px solid #e5e7eb;
-    border-bottom: 1px solid #e5e7eb; /* border-y border-gray-200 */
-    border-radius: 0.5rem; /* rounded-lg */
 }
 
 .order-total-title {
@@ -112,6 +105,8 @@
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .order-total-item dt {
