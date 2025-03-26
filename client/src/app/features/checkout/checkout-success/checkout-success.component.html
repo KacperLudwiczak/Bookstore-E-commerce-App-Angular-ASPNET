@@ -11,25 +11,25 @@
         <div class="order-details">
             <dl class="order-row">
                 <dt>Date</dt>
-                <dd class="font-medium text-gray-900 text-end">
+                <dd>
                     {{order.orderDate | date: 'medium'}}
                 </dd>
             </dl>
             <dl class="order-row">
                 <dt>Payment method</dt>
-                <dd class="font-medium text-gray-900 text-end">
+                <dd>
                     {{order.paymentSummary | paymentCard}}
                 </dd>
             </dl>
             <dl class="order-row">
                 <dt>Address</dt>
-                <dd class="font-medium text-gray-900 text-end">
+                <dd>
                     {{order.shippingAddress | address}}
                 </dd>
             </dl>
             <dl class="order-row">
                 <dt>Amount</dt>
-                <dd class="font-medium text-gray-900 text-end">
+                <dd>
                     {{order.total | currency}}
                 </dd>
             </dl>
@@ -42,19 +42,23 @@
     </div>
 </section>
 
-<section *ngIf="!signalrService.orderSignal()" class="bg-white py-16">
-    <div class="mx-auto max-w-2xl px-4">
-        <h2 class="font-semibold text-2xl mb-2">Order processing... please wait</h2>
+<section *ngIf="!signalrService.orderSignal()" class="order-processing"> 
+    <div class="order-processing-container">
+        <h2 class="order-processing-title">Order processing... please wait</h2>
 
-        <div class="space-y-2 rounded-lg border border-gray-100 bg-gray-50 p-6 mb-8">
-            <div class="flex flex-col justify-center items-center">
-                <mat-spinner diameter="30"></mat-spinner>
-                <p class="text-xl">Loading order...</p>
-                <span>Your payment has been received.  We are creating the order</span>
+        <div class="order-loading-box">
+            <div>
+                <div class="order-spinner">
+                    <mat-spinner diameter="30"></mat-spinner>
+                </div>
+                <p class="order-loading-text">Loading order...</p>
+                <span class="order-processing-message">
+                    Your payment has been received. We are creating the order.
+                </span>
             </div>
         </div>
-        <div class="flex items-center space-x-4">
-            <button routerLink="/shop" class="button">Continue shopping</button>
+        <div class="order-button-container">
+            <button routerLink="/shop" class="button order-button">Continue shopping</button>
         </div>
     </div>
 </section>
