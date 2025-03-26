@@ -3,12 +3,20 @@ import { OrderService } from '../../../core/services/order.service';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { Order } from '../../../shared/models/order';
 import { MatCardModule } from '@angular/material/card';
+import { PaymentCardPipe } from '../../../shared/pipes/payment-card.pipe';
+import { CurrencyPipe, DatePipe } from '@angular/common';
+import { AddressPipe } from '../../../shared/pipes/address.pipe';
 
 @Component({
 selector: 'app-order-detailed',
 standalone: true,
 imports: [
     MatCardModule,
+    DatePipe,
+    CurrencyPipe,
+    AddressPipe,
+    PaymentCardPipe,
+    RouterLink
 ],
 templateUrl: './order-detailed.component.html',
 styleUrl: './order-detailed.component.scss'
