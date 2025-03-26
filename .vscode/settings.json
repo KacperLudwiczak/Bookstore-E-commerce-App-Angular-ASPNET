@@ -6,6 +6,7 @@
         "commerceproject",
         "internalerror",
         "nvarchar",
+        "signalr",
         "validationerror"
     ]
 }
