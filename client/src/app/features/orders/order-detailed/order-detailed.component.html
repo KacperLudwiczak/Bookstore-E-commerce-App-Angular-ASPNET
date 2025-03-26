@@ -3,7 +3,7 @@
     <div class="order-summary-content">
         <div class="order-summary-header">
             <h2 class="order-summary-title">Order summary for order #{{order.id}}</h2>
-            <button routerLink="/orders" mat-stroked-button>Return to orders</button>
+            <button routerLink="/orders" class="button">Return to orders</button>
         </div>
 
         <div class="order-info-section">
@@ -15,7 +15,7 @@
                 </dl>
                 <dl class="order-info-item">
                     <dt>Payment info</dt>
-                    <!-- <dd>{{order.paymentSummary | paymentCard}}</dd> -->
+                    <dd>{{order.paymentSummary | paymentCard}}</dd>
                 </dl>
             </div>
 
