@@ -119,3 +119,35 @@
 .apply-code-button {
     width: 100%;
 }
+
+/* Coupon Container */
+.coupon-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fef3c7; /* Light orange background */
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #f97316; /* Orange border */
+}
+
+/* Coupon Text */
+.coupon-text {
+    font-size: 0.875rem; /* text-sm */
+    font-weight: 600; /* font-semibold */
+    color: #ea580c; /* Deep orange text */
+}
+
+/* Remove Coupon Button */
+.remove-coupon-button {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.remove-coupon-button:hover {
+    transform: scale(1.1);
+}
