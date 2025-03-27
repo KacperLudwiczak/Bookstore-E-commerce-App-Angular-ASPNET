@@ -50,7 +50,7 @@
             <div *ngIf="cartService.cart()?.coupon as coupon" class="coupon-container">
                 <span class="coupon-text">{{coupon.name}} applied</span>
                 <button (click)="removeCouponCode()" class="remove-coupon-button">
-                    <mat-icon color="warn">delete</mat-icon>
+                    <mat-icon class="delete-icon">delete</mat-icon>
                 </button>
             </div>            
             <mat-form-field appearance="outline" class="voucher-input">

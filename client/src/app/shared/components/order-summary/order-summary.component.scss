@@ -151,3 +151,7 @@
 .remove-coupon-button:hover {
     transform: scale(1.1);
 }
+
+.remove-coupon-button mat-icon {
+    color: #f97316 !important; /* Custom orange */
+}
