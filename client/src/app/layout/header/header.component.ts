@@ -7,6 +7,7 @@ import { CartService } from '../../core/services/cart.service';
 import { BusyService } from '../../core/services/busy.service';
 import { AccountService } from '../../core/services/account.service';
 import { MatMenu, MatMenuTrigger } from '@angular/material/menu';
+import { IsAdminDirective } from '../../shared/directives/is-admin.directive';
 
 
 @Component({
@@ -20,7 +21,8 @@ import { MatMenu, MatMenuTrigger } from '@angular/material/menu';
     RouterLinkActive,
     MatProgressBarModule,
     MatMenuTrigger,
-    MatMenu
+    MatMenu,
+    IsAdminDirective
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
