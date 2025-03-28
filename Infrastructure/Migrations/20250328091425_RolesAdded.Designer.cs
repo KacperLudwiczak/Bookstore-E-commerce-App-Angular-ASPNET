@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastructure.Migrations
 {
     [DbContext(typeof(StoreContext))]
-    [Migration("20250328083750_RolesAdded")]
+    [Migration("20250328091425_RolesAdded")]
     partial class RolesAdded
     {
         /// <inheritdoc />
@@ -296,13 +296,13 @@ namespace Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "b63c70e4-cf90-44fa-8ec2-03a0722a0b1b",
+                            Id = "cd186473-fb87-4694-9dcf-0e1c3cbed51a",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "c6bbffb7-bc0a-40c8-85d8-de4a90e5431e",
+                            Id = "2beea80c-724e-43cb-ab07-669370b0a6db",
                             Name = "Customer",
                             NormalizedName = "CUSTOMER"
                         });
