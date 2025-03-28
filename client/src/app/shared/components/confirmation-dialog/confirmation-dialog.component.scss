@@ -1,0 +1,39 @@
+/* Modal Container */
+.modal-container {
+    padding: 1rem; /* p-4 */
+    background-color: white;
+    border-radius: 0.5rem;
+    max-width: 400px;
+}
+
+/* Title */
+.modal-title {
+    font-size: 1.125rem; /* text-lg */
+    font-weight: 600; /* font-semibold */
+    margin-bottom: 1rem;
+    color: #111827;
+}
+
+/* Message */
+.modal-message {
+    margin-bottom: 1rem;
+    color: #4b5563; /* Gray-700 */
+}
+
+/* Action Buttons */
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+/* Optional: Add hover effect for confirm button */
+.modal-actions button:last-child {
+    border-color: #f97316;
+    color: #f97316;
+}
+
+.modal-actions button:last-child:hover {
+    background-color: #f97316;
+    color: white;
+}
