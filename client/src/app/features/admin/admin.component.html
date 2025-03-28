@@ -1,0 +1,86 @@
+<div class="dashboard-container">
+    <mat-tab-group class="dashboard-tabs">
+        <mat-tab label="Orders">
+            <div class="orders-header">
+                <h2 class="orders-title">Customer orders</h2>
+                <mat-form-field appearance="outline" class="status-filter">
+                    <mat-label>Filter by status</mat-label>
+                    <mat-select (selectionChange)="onFilterSelect($event)">
+                        @for (status of statusOptions; track $index) {
+                            <mat-option [value]="status">{{status}}</mat-option>
+                        }
+                    </mat-select>
+                </mat-form-field>
+            </div>
+
+            <div class="orders-table-container">
+                <div class="mat-elevation-z8">
+                    <table mat-table [dataSource]="dataSource" class="orders-table">
+
+                        <ng-container matColumnDef="id">
+                            <th mat-header-cell *matHeaderCellDef> No. </th>
+                            <td mat-cell *matCellDef="let order"> {{order.id}} </td>
+                        </ng-container>
+
+                        <ng-container matColumnDef="buyerEmail">
+                            <th mat-header-cell *matHeaderCellDef> Buyer email </th>
+                            <td mat-cell *matCellDef="let order"> {{order.buyerEmail}} </td>
+                        </ng-container>
+
+                        <ng-container matColumnDef="orderDate">
+                            <th mat-header-cell *matHeaderCellDef> Date </th>
+                            <td mat-cell *matCellDef="let order"> {{order.orderDate | date: 'short'}} </td>
+                        </ng-container>
+
+                        <ng-container matColumnDef="total">
+                            <th mat-header-cell *matHeaderCellDef> Total </th>
+                            <td mat-cell *matCellDef="let order"> {{order.total | currency}} </td>
+                        </ng-container>
+
+                        <ng-container matColumnDef="status">
+                            <th mat-header-cell *matHeaderCellDef> Status </th>
+                            <td mat-cell *matCellDef="let order"> {{order.status}} </td>
+                        </ng-container>
+
+                        <ng-container matColumnDef="action">
+                            <th mat-header-cell *matHeaderCellDef> Actions </th>
+                            <td mat-cell *matCellDef="let order">
+                                <div class="orders-actions">
+                                    <button matTooltip="View" mat-icon-button routerLink="/orders/{{order.id}}">
+                                        <mat-icon class="icon-accent">visibility</mat-icon>
+                                    </button>
+                                    <button matTooltip="Refund" 
+                                        [disabled]="order.status === 'Refunded'"
+                                        (click)="openConfirmDialog(order.id)"
+                                        mat-icon-button>
+                                        <mat-icon class="icon-warn">undo</mat-icon>
+                                    </button>
+                                </div>
+                            </td>
+                        </ng-container>
+
+                        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                    </table>
+
+                    <mat-paginator 
+                        class="orders-paginator"
+                        [pageSizeOptions]="[5, 10, 20]"
+                        [length]="totalItems"
+                        [pageSize]="orderParams.pageSize"
+                        (page)="onPageChange($event)"
+                        showFirstLastButtons
+                    >
+                    </mat-paginator>
+                </div>
+            </div>
+        </mat-tab>
+
+        <mat-tab label="Catalog">
+            <div class="tab-placeholder">Catalog placeholder</div>
+        </mat-tab>
+        <mat-tab label="Customer service">
+            <div class="tab-placeholder">Customer service</div>
+        </mat-tab>
+    </mat-tab-group>
+</div>
